@@ -5,7 +5,7 @@ const Calculator = () => {
     const [equation, setEquation] = useState("");
 
     return (
-        <div id="Calculator">
+        <div className="Calculator">
             <div id="topspace">{equation}</div>
 
             <div id="btns">
@@ -38,9 +38,9 @@ const Calculator = () => {
                 </div>
 
                 <div id="right-btns">
-                    <button value="-" onClick={() => { setEquation(equation + "-"); }} >     - </button>
+                    <button value="-" onClick={() => { setEquation(equation + "-"); }} id="btn-9">     - </button>
                     {console.log(equation)}
-                    <button onClick={() => { setEquation(equation + "+"); }} >     + </button>
+                    <button onClick={() => { setEquation(equation + "+"); }} id="btn-5">     + </button>
                     <button onClick={() => { setEquation(eval(equation)); }}>    = </button>
                 </div>
             </div>
